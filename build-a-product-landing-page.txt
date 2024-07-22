@@ -1,0 +1,293 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summit Apparel</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://www.summitapparel.ca/wp-content/uploads/2023/11/Logo-Cropped.jpg" height="60px">
+
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#sign-up">Sign Up</a></li>
+          <li><a class="nav-link" href="#best-sellers">Best Sellers</a></li>
+          <li><a class="nav-link" href="#about-us">About Us</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <section id="hero">
+      <h1 id="sign-up">See the World in Style!</h1>
+      <form  id="form" action="https://www.freecodecamp.com/email-submit">
+      <input type="email" name="email" id="email" placeholder="Enter your email address...">
+      <input type="submit" id="submit" >
+      </form>
+      </section> 
+  <iframe  id="video"  height="500" width="1000"
+      src="https://www.youtube.com/embed/j-NRl1UzXYc" frameborder="0" allowfullscreen=""></iframe>
+      <h1 class="best-sellers" id="best-sellers">Best Sellers</h1>
+  <section id="container">
+    
+    <div class="product">
+      <h2 class="product-title">Explorer's Hiking Jacket</h2>
+      <p>This versatile, weather-resistant jacket is perfect for all your outdoor adventures. It features multiple pockets, breathable fabric, and an adjustable hood.</p>
+      <img src="https://i.pinimg.com/originals/91/aa/c6/91aac6aecf7a947b7e66e8d27f724e85.jpg" width="220px">
+      <p class="price">£129.99</p>
+
+    </div>
+    <div class="product">
+      <h2 class="product-title">Nomad Travel Backpack</h2>
+      <p>Designed for the modern traveler, this durable backpack offers ample storage space, a laptop compartment, and ergonomic support for long journeys.</p>
+      <img src="https://d3d71ba2asa5oz.cloudfront.net/12022079/images/ebay-hp1032-2.jpg" width="220px">
+      <p class="price">£89.99</p>
+    </div>
+    <div class="product">
+      <h2 class="product-title">Trailblazer Hiking Boots</h2>
+      <p>Crafted for durability and comfort, these boots offer superior traction and waterproof protection, perfect for avid hikers. Available sizes 1-12.
+      </p>
+      <img src="https://travelexplain.com/wp-content/uploads/2022/12/61yPfaCSPLL._AC_UY625_-1024x1024.jpg" width="220px">
+      <p class="price">£149.99</p>
+    </div>
+    
+  </section>
+  
+<section class="about-us" id="about-us">
+  <div class="about-us-text">
+  <h2 id="about-us-heading">About Us</h2>
+  <p>
+    Welcome to Summit Apparel, where our passion for exploration meets quality craftsmanship. Founded with a commitment to outfitting adventurers with gear that excels in both performance and style, Summit Apparel brings you a curated selection of premium outdoor essentials.
+
+At Summit Apparel, we believe that every journey is an opportunity to discover new horizons and push the boundaries of exploration. Whether you're scaling peaks, trekking through rugged landscapes, or simply embracing the outdoors, our products are designed to elevate your experience with comfort, durability, and functionality in mind.
+
+Our team is dedicated to sourcing and designing gear that not only meets but exceeds the expectations of outdoor enthusiasts. From our Explorer's Hiking Jacket to our Nomad Travel Backpack and Trailblazer Hiking Boots, each product is crafted with meticulous attention to detail and a passion for adventure.
+
+Join us as we embark on this journey to inspire and equip you for your next great adventure. Experience the Summit Apparel difference and gear up for your outdoor pursuits with confidence.
+  </p>
+  </div>
+  <img id="store-front-img" src="https://www.junipergallery.com/sites/default/files/styles/medium/public/SHORPY-8b36685a.jpg?itok=hGMCqwSu">
+</section>
+<footer><address>Created by Chris Ferguson<br>Hertford, UK</footer>
+    </footer>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+:root{
+  background-color:#dfdfe2
+}
+
+html {
+  scroll-padding-top: 80px; 
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+h1{
+  margin-top:80px;
+  font-size:55px;
+}
+#hero input[type="email"] {
+    max-width: 275px;
+    width: 100%;
+    height:35px;
+    padding: 5px;
+    margin-bottom:15px;
+    border-radius:5px;
+    background-color:transparent;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-color:#ffcf33;
+    
+}
+#hero input[type="submit"] {
+  margin-bottom:30px;
+  display: block;
+  margin: 0 auto 25px auto;
+  border-radius:5px;
+  height:2em;
+  font-size: 1.1rem;
+  border-color:rgba(0,0,0,0.1);
+  background-color:#ffcf33;
+  
+}
+
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+input[type="submit"]{
+  
+  height:2em;
+  font-size: 1.1rem;
+}
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #476b62 
+;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left:0;
+}
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+nav > ul {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+nav > ul > li:hover {
+  color: #ffcf33;
+  cursor: pointer;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#video{
+  margin:25px auto auto auto;
+  align-items:center;
+  justify-items:center;
+  display:block;
+}
+#container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:auto 0 100px 0;
+  gap:25px;
+
+}
+.product{
+  
+  background-color:#a3c2ba ;
+  border:1px solid #ddd;
+  padding:20px;
+  width:300px;
+  min-width: 300px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  text-align:center;
+}
+.best-sellers{
+  border-bottom: 4px solid #dfdfe2;
+  margin-top:50px;
+  text-align:center;
+}
+.product:hover{
+  border:2px solid #fff;
+  color:#fff;
+}
+
+.price {
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+    font-size:20px;
+}
+.product h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+#about-us-heading{
+  text-align:left;
+}
+.about-us{
+   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:20px 0 15px 0;
+  gap:50px;
+  padding-top:15px;
+  padding-bottom:15px;
+  box-shadow: 0 2px rgba(0,0,0,0.1);
+  background-color:#a3c2ba;
+  width:100%;
+  
+}
+
+#store-front-img{
+  
+  
+  min-width:350px;
+}
+.about-us-text{
+  width:40%;
+  min-width:300px;
+  text-align: justify;
+  padding:0px;
+  margin:20px;
+}
+#about-us-heading{
+  font-size:35px;
+  margin:0;
+  padding:0;
+}
+
+@media (prefers-reduced-motion:no-preference){
+  *{
+    scroll-behavior: smooth;
+  }
+}
+
+footer{
+  background-color:#476b62;
+  justify-content:center;
+  text-align:center;
+  width:100%;
+  margin:0   ;
+ 
+  color:#fff;
+  position:relative;
+  left:0;
+  bottom:0;
+  display:flex;
+ 
+}
+
+
+** end of undefined **
+
